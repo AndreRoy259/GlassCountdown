@@ -4,8 +4,8 @@
   box-sizing: border-box;
 }
 
-body{
-  font-family: 'New Tegomin', serif;
+body {
+  font-family: "New Tegomin", serif;
   font-family: "Syne Mono", monospace;
   /* font-family: 'Special Elite', cursive; */
   /* font-family: 'Rock Salt', cursive; */
@@ -22,7 +22,10 @@ section {
 }
 
 section::before {
-  content: "";
+  content: "?";
+  text-align: center;
+  font-size: 15em;
+  font-weight: 900;
   position: absolute;
   top: 10%;
   right: 20%;
@@ -34,7 +37,10 @@ section::before {
 }
 
 section::after {
-  content: "";
+  content: "?";
+  text-align: center;
+  font-size: 13em;
+  font-weight: 900;
   position: absolute;
   bottom: 10%;
   left: 20%;
@@ -89,7 +95,7 @@ section::after {
   border-right: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.clock .container h2 span{
+.clock .container h2 span {
   font-size: 2em;
 }
 
@@ -97,7 +103,7 @@ section::after {
   color: #f9d524;
 }
 
-.clock .container span#ampm{
+.clock .container span#ampm {
   position: relative;
   top: -50px;
   font-size: 2em;
