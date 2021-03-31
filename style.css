@@ -6,6 +6,9 @@
 
 body{
   font-family: 'New Tegomin', serif;
+  font-family: "Syne Mono", monospace;
+  /* font-family: 'Special Elite', cursive; */
+  /* font-family: 'Rock Salt', cursive; */
 }
 
 section {
@@ -46,17 +49,17 @@ section::after {
 @keyframes animate {
   0%,
   100% {
-    transform: translateY(20px);
+    transform: translateY(30px);
   }
 
   50% {
-    transform: translateY(-20px);
+    transform: translateY(-30px);
   }
 }
 
 .clock {
   position: relative;
-  width: 800px;
+  width: 900px;
   height: 350px;
   background: linear-gradient(255, 255, 255, 0.05);
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
