@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glassmorphism</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <section>
+      <!-- <div class="clock">
+        <div class="container">
+          <h2 id="hour">00</h2>
+          <h2 class="dot">:</h2>
+          <h2 id="minute">00</h2>
+          <h2 class="dot">:</h2>
+          <h2 id="seconds">00</h2>
+          <span id="ampm">AM</span>
+        </div>
+      </div> -->
+
+      <div class="clock" id="clock"></div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./countdown.js"></script>
+    <script type="text/javascript">
+      $("#clock").countdown("2021/05/15", function (event) {
+        var $this = $(this).html(
+          event.strftime(
+            "" +
+              '<div class="container">' +
+              "<h2><span>%w</span><br>Sem</h2>" +
+              "<h2><span>%d</span><br>Jrs</h2>" +
+              "<h2><span>%H</span><br>Hr</h2>" +
+              "<h2><span>%M</span><br>Min</h2>" +
+              "<h2><span>%S</span><br>Sec</h2>" +
+              "</div>"
+          )
+        );
+      });
+    </script>
+  </body>
+</html>
